@@ -11,16 +11,6 @@ let filterHabitsBtn = document.getElementById("showFiltersBtnHabits");
 let applyFiltersBtn = document.getElementById("applyHabitFiltersButton");
 
 
-/*NOTES:
-
-FILTRERING:
--Inget händer när man klickar på applyFiltersBtn. ID stämmer, men nås inte radioknapparna kanske? 
-
-ANNAT:
--påbygga completedknappen - tidsgräns på streak? nollställs efter 24h?
- 
-*/
-
 let createHabitListItem = (title, priority, streak, id) => {
     let users = JSON.parse(localStorage.getItem("users")) || [];
     let li = document.createElement("li");
